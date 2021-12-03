@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8" />
+	<title>详细资料</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/swiper-3.4.1.min.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<!-- 森禅自定义 -->
+	<link rel="stylesheet" href="css/wx-new-style-list.css" />
+	
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/fontSize.js"></script>
+	<script src="js/swiper-3.4.1.min.js"></script>
+	<script src="js/wcPop/wcPop.js"></script>
+	
+	<style>
+		.wc__headerBar .inner, .wc__headerBar .inner a:active{background:white;}
+		.wc__headerBar .inner{border-bottom: 0px solid #e3e3e4;}
+	</style>
+</head>
+<body>
+	
+	<!-- <>微聊主容器 -->
+	<div class="wechat__panel clearfix">
+		<div class="wc__home-wrapper flexbox flex__direction-column">
+			<!-- //顶部 -->
+			<div class="wc__headerBar fixed">
+				<div class="inner flexbox">
+					<a class="back splitline" href="javascript:;" onclick="history.back(-1);"></a>
+					<h2 class="barTit flex1">详细资料</h2>
+				</div>
+			</div>
+
+			<!-- //好友详细资料页 -->
+			<div class="wc__ucinfoPanel">
+				<div class="wc__ucinfo-detail">
+					<ul class="clearfix" id="J__ucinfoPanel">
+						<li>
+							<div class="item flexbox flex-alignc wc__material-cell num1">
+								<img class="uimg" src="img/placeholder/ysdwl.jpg" />
+								<label class="lbl flex1">
+									<em>遗失的未来🌞</em><i>微聊号：yishideweilai2001</i><i>地区：中国大陆</i>
+								</label>
+							</div>
+
+							<div class="item flexbox flex-alignc wc__material-cell">
+								<label class="lbl flex1">电话号码&emsp;<a href="javascript:;">********556</a></label>
+							</div>
+
+							<div class="item flexbox flex-alignc wc__material-cell" routeUrl="weiyouquan.html">
+								<label class="lbl">个人相册</label>
+								<div class="cnt flex1">
+									<img src="img/placeholder/py1.jpg" /><img src="img/placeholder/dufu.jpg" /><img src="img/placeholder/qingdao_0.jpg" />
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="item flexbox flex-alignc wc__material-cell">
+								<label class="lbl flex1">更多信息</label>
+							</div>
+							
+						</li>
+					</ul>
+				</div>
+				<div class="wc__btns-panel">
+					<a class="wc__btn-primary" href="javascript:;">发消息</a>
+					<a class="wc__btn-default mt20" href="#">视频聊天</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		/** __公共函数 */
+		$(function(){
+			// ...
+		});
+		
+		/** __自定函数 */
+		$(function(){
+			// 跳转链接
+			$(".wechat__panel").on("click", "*[routeUrl]", function (e) {
+				var routeurl = $(this).attr('routeUrl');
+				if (!routeurl) return;
+				window.location.href = routeurl;
+			});
+		});
+	</script>
+	
+</body>
+</html>

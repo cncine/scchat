@@ -1,0 +1,35 @@
+/* 微信模板配套css，作者森禅 */
+body{background: #ededed;}
+.splitline::after{content: ''; border-right: 1px solid #ededed; position: absolute; top: .25rem; bottom: .25rem; right: 0;}
+.splitlineL::after{content: ''; border-left: 1px solid #ededed; position: absolute; top: .25rem; bottom: .25rem; left: 0;}
+.wc__headerBar .inner, .wc__headerBar .inner a:active{background:#ededed;}
+.wc__headerBar .inner{border-bottom: 1px solid #e3e3e4;}
+.wc__headerBar .inner .barTit,.wc__headerBar .inner .barTxt{color:#171717;}
+.wc__headerBar .inner .barTit{margin-left:0; text-align: center;}
+.wc__headerBar .inner .back{background: url(../img/topbar/icon__back_1.png) no-repeat center; background-size:.4rem; width:1.02rem; position: relative;}
+.wc__headerBar .inner .u-one,.wc__headerBar .inner .u-qun{background: url(../img/topbar/icon__more_1.png) no-repeat center; background-size:.4rem;}
+.chatMsg-cnt ul li.notice span a{color: rgb(0,43,128)}
+.chatMsg-cnt ul li .avatar span{font-size: .5rem; line-height: .8rem;}
+.chatMsg-cnt ul li.me .content .msg{background-color: #99ff66; border-color: #99ff66; overflow: visible;}
+.chatMsg-cnt ul li.me .content .msg .not_sent {
+    position: absolute;
+    width: .4rem;
+    height: .4rem;
+    background: url(../img/wchat/not_sent_icon.png) no-repeat;
+    background-size: .4rem;
+    top:50%;
+    left: -0.15rem;
+    transform: translate(-100%, -50%);
+}
+.chatMsg-cnt ul li .avatar{border-radius: 5px; text-align: center;}
+.chatMsg-cnt ul li.notice span,.chatMsg-cnt ul li.time span{background: transparent; color: #999999;}
+.chatMsg-cnt ul li .content .lgface:before{display: none;}
+.wc__editor-panel .btn-submit{display: none;}
+::-webkit-scrollbar{display: none;}
+.chatMsg-cnt ul li .content .picture .img__pic, .chatMsg-cnt ul li .content .video .img__video{max-height: 2.7rem; max-width: 2.7rem; border-radius: .07rem;}
+.wc__editor-panel .btn-voice{pointer-events: none; margin-left: 0; margin-right: .15rem; background: url(../img/wchat/icon__voice.png) no-repeat; background-size: cover;}
+.wc__footTool-panel{background: #f7f7f7;}
+.wc__editor-panel{padding: .15rem .15rem; align-items: flex-end;}
+.wc__editor-panel .wrap-editor .editor{border-radius: 4px; background: white; border-bottom: 1px solid transparent; color: #333; caret-color: green; font-size: .38rem; padding: .1rem .15rem; overflow-y: auto; overflow-x: hidden; outline: none; word-wrap: break-word; word-break: break-all; line-height: .5rem; max-height: 2.3rem; max-width: 100%; transition: border-color .3s;}
+.wc__editor-panel .wrap-editor .editor:focus{border-bottom-color: transparent;}
+.wc__editor-panel .wrap-editor .editor .face{vertical-align: middle; height: .5rem;}

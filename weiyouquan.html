@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8" />
+	<title>好友圈</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/swiper-3.4.1.min.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<!-- 森禅自定义 -->
+	<link rel="stylesheet" href="css/wx-new-style-list.css" />
+	
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/fontSize.js"></script>
+	<script src="js/swiper-3.4.1.min.js"></script>
+	<script src="js/wcPop/wcPop.js"></script>
+	
+	<style>
+		body{background:white;}
+		.wc__headerBar .inner, .wc__headerBar .inner a:active{position:absolute;background: rgba(237,237,237,0);}
+		.wc__headerBar .inner .barTit{opacity: 0;}
+		.wc__headerBar.fixed{padding-bottom:0rem;}
+		.wc__headerBar .inner{border-bottom: 0px solid #e3e3e4;}
+		.wc__headerBar .inner .back{background: url(./img/topbar/icon__back-white.png) no-repeat center; background-size:.4rem; width:1.02rem;height: 1.02rem; position: relative;}
+		.wc__headerBar .inner i {background: url(./img/topbar/baa.png) no-repeat center; background-size:.5rem; width:1.02rem; position: relative; margin-left:auto; filter: invert(1);}
+	</style>
+</head>
+<body>
+	
+	<!-- <>微聊主容器 -->
+	<div class="wechat__panel clearfix">
+		<div class="wc__home-wrapper flexbox flex__direction-column">
+			<!-- //顶部 -->
+			<div class="wc__headerBar fixed">
+				<div class="inner flexbox">
+					<a class="back splitline" href="javascript:;" onclick="history.back(-1);"></a>
+					<h2 class="barTit flex1">朋友圈</h2>
+					<i></i>
+				</div>
+			</div>
+
+			<!-- //weiyouquan -->
+			<div class="wc__friendZone">
+				<div class="head">
+					<img class="cover J__covers" src="img/placeholder/bg.jpg" />
+					<p class="uname">遗失的未来🌞</p>
+					<a class="avator" href="#"><img src="img/placeholder/ysdwl.jpg" /></a>
+					<span>任何事都有可能，只是我们无法感知——无限猴子定律</span>
+					
+				</div>
+				<!-- //列表区 -->
+				<div class="cont">
+					<div class="inner">
+						<ul class="wc__cmtlist clearfix" id="J__cmtList">
+						<!-- 							
+							<li>
+								<div class="wrap-avt fl"><img src="img/uimg/u__chat-img14.jpg" /></div>
+								<div class="wrap-cmt">
+									<div class="cmt-hd">
+										<h2 class="u-name">Nice奶思</h2>
+										<div class="post__cnt clearfix">
+											<p>打卡！早上好哇，大家看这漂亮吗。</p>
+											<p>
+												<img class="list-img" src="img/placeholder/wcZone-img01.jpg" />
+												<img class="list-img" src="img/placeholder/wchat__img01.jpg" />
+											</p>
+										</div>
+										<div class="reply__box clearfix">
+											<label class="time fl c--999">刚刚</label>
+											<a class="btn-reply fr" href="javascript:;"></a>
+											
+											<div class="wc__cmtbox">
+												<a class="like" href="javascript:;" id="J__btnLike"><i></i>赞</a>
+												<a class="cmt" href="javascript:;" id="J__btnCmt"><i></i>评论</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="wrap-avt fl"><img src="img/uimg/u__chat-img04.jpg" /></div>
+								<div class="wrap-cmt">
+									<div class="cmt-hd">
+										<h2 class="u-name">张小龙</h2>
+										<div class="post__cnt clearfix">
+											<p>那一年我发誓一定要出人头地，希望能一统互联网江湖，拯救天下苍生！！！<br />如今：<br />微信已家喻户晓<br />微信支付已打败银行</p>
+											<p>
+												<img class="list-img" src="img/placeholder/wcZone-img02.jpeg" />
+												<img class="list-img" src="img/placeholder/wcZone-img03.jpeg" />
+												<img class="list-img" src="img/placeholder/wcZone-img04.jpeg" />
+											</p>
+										</div>
+										<div class="reply__box clearfix">
+											<label class="time fl c--999">8分钟前</label>
+											<a class="btn-reply fr" href="javascript:;"></a>
+											
+											<div class="wc__cmtbox">
+												<a class="like" href="javascript:;" id="J__btnLike"><i></i>赞</a>
+												<a class="cmt" href="javascript:;" id="J__btnCmt"><i></i>评论</a>
+											</div>
+										</div>
+									</div>
+									<div class="arr"></div>
+									<div class="cmt-bd">
+										<div class="like">
+											习大大，奥巴马，赵薇，杨幂，王思聪，刘德华，邓超，范冰冰，史玉柱...
+										</div>
+										<div class="reply-list">
+											<p><span>习大大：</span>像你们这些推动社会进步的人事表示感谢~</p>
+											<p><span>马云：</span>微信能有今天，确认厉害。</p>
+											<p><span>张小龙</span>回复<span>马云</span>谢谢，您的淘宝也很强大。</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="wrap-avt fl"><img src="img/uimg/u__chat-img01.jpg" /></div>
+								<div class="wrap-cmt">
+									<div class="cmt-hd">
+										<h2 class="u-name">马云(电商大王)</h2>
+										<div class="post__cnt clearfix">
+											<p>那一年我发誓一定要让电商火遍大江南北，让天下没有难做的生意。<br />如今：<br />淘宝已家喻户晓<br />支付宝已打败银行<br />天猫双11销售额让你无法想象</p>
+											<p>
+												<img class="list-img" src="img/placeholder/wcZone-img05.jpg" />
+												<img class="list-img" src="img/placeholder/wcZone-img06.jpg" />
+											</p>
+										</div>
+										<div class="reply__box clearfix">
+											<label class="time fl c--999">3小时前</label>
+											<a class="btn-reply fr" href="javascript:;"></a>
+											
+											<div class="wc__cmtbox">
+												<a class="like" href="javascript:;" id="J__btnLike"><i></i>赞</a>
+												<a class="cmt" href="javascript:;" id="J__btnCmt"><i></i>评论</a>
+											</div>
+										</div>
+									</div>
+									<div class="arr"></div>
+									<div class="cmt-bd">
+										<div class="like">
+											李克强，黄渤，张小龙，周杰伦，黄晓明...
+										</div>
+										<div class="reply-list">
+											<p><span>李克强：</span>马总不错，好样哒！推动社会经济。</p>
+											<p><span>王健林：</span>我的万达也不错喔！</p>
+											<p><span>马云</span>回复<span>王健林：</span>有笔大生意找你聊聊。</p>
+										</div>
+									</div>
+								</div>
+							</li> 
+						-->
+							<li>
+								<div class="wrap-avt fl"><img src="img/placeholder/ysdwl.jpg" /></div>
+								<div class="wrap-cmt">
+									<div class="cmt-hd">
+										<h2 class="u-name">遗失的未来🌞</h2>
+										<div class="post__cnt clearfix">
+											<p>想念故乡😢</p>
+											<p>
+												<img class="list-img" src="img/placeholder/qingdao_0.jpg" />
+												<img class="list-img" src="img/placeholder/qingdao_1.jpg" />
+											</p>
+										</div>
+										<div class="reply__box clearfix">
+											<label class="time fl c--999">2021,12,1</label>
+											<a class="btn-reply fr" href="javascript:;"></a>
+											<!-- 评论弹窗 -->
+											<div class="wc__cmtbox">
+												<a class="like" href="javascript:;" id="J__btnLike"><i></i>赞</a>
+												<a class="cmt" href="javascript:;" id="J__btnCmt"><i></i>评论</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<div class="wrap-avt fl"><img src="img/placeholder/slgy.jpg" /></div>
+								<div class="wrap-cmt">
+									<div class="cmt-hd">
+										<h2 class="u-name">李桂英13922242185</h2>
+										<div class="post__cnt clearfix">
+											<p>这个杂种，养他这么大，不给我希望我不怪他，但是他给我造谣生事，不断地侮辱我，哪有侮辱自己亲妈的？这样的杂毛子不会有好下场。恨不得一两刀把他宰了🔪🔪🔪！</p>
+											<p>
+												<img class="list-img" src="img/placeholder/xyimg.jpg" />
+											</p>
+										</div>
+										<div class="reply__box clearfix">
+											<label class="time fl c--999">2021,11,23</label>
+											<a class="btn-reply fr" href="javascript:;"></a>
+											<!-- 评论弹窗 -->
+											<div class="wc__cmtbox">
+												<a class="like" href="javascript:;" id="J__btnLike"><i></i>赞</a>
+												<a class="cmt" href="javascript:;" id="J__btnCmt"><i></i>评论</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							
+							<li>
+								<div class="wrap-avt fl"><img src="img/uimg/tanhua.jpg" /></div>
+								<div class="wrap-cmt">
+									<div class="cmt-hd">
+										<h2 class="u-name">远海</h2>
+										<div class="post__cnt clearfix">
+											<p>最近太怄气了，姓李的女人总骗我，背着我要和那个杂毛子睡觉，过了年别让他俩种田了</p>
+											<p>
+												<img class="list-img" src="img/placeholder/blue_home.jpg" />
+											</p>
+										</div>
+										<div class="reply__box clearfix">
+											<label class="time fl c--999">2021,9,11</label>
+											<a class="btn-reply fr" href="javascript:;"></a>
+											<!-- 评论弹窗 -->
+											<div class="wc__cmtbox">
+												<a class="like" href="javascript:;" id="J__btnLike"><i></i>赞</a>
+												<a class="cmt" href="javascript:;" id="J__btnCmt"><i></i>评论</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		/** __公共函数 */
+		$(function(){
+			// ...
+		});
+		
+		/** __自定函数 */
+		$(function(){
+			// 赞封面
+			$(".J__covers").on("click", function(){
+				var coverIdx = wcPop({
+					id: 'receivableIntro',
+					skin: 'androidSheet',
+
+					btns: [
+						{
+							text: '赞一下这个封面',
+							style: 'line-height: 50px;',
+							onTap() {
+								wcPop.close(coverIdx);
+							}
+						},
+					]
+				});
+			});
+
+			// 显示点赞、评论框
+			$("#J__cmtList li").on("click", ".btn-reply", function(){
+				$(this).siblings(".wc__cmtbox").fadeIn(300);
+				$(this).parents("li").siblings().find(".wc__cmtbox").hide();
+			});
+			// 隐藏点赞、评论框
+			$(window).on("scroll", function () {
+				$(".wc__cmtbox").hide();
+			});
+
+			// 评论
+			$("#J__cmtList li").on("click", "#J__btnCmt", function(){
+				alert(9)
+			});
+
+			//滚动时
+			$(document).scroll(function() {
+    			var scroH = $(document).scrollTop();  //滚动高度
+    			var viewH = $(window).height();  //可见高度
+    			var contentH = $(document).height();  //内容高度
+				var headimgH = $(".wc__friendZone .head").height();
+				var topbarH = $(".wc__headerBar .inner").height();
+				var keyY = topbarH / 2;
+ 
+    			if(scroH >100){  //距离顶部大于100px时
+ 
+    			}
+    			if (contentH - (scroH + viewH) <= 100){  //距离底部高度小于100px
+          
+    			} 
+    			if (contentH = (scroH + viewH)){  //滚动条滑到底部啦
+          
+    			} 
+
+				if (scroH > topbarH / 2) { //头部图片出界
+					
+				}
+				Math.max();
+				var _opacity_ = (scroH + topbarH - headimgH) / keyY;
+				_opacity_ = Math.max(_opacity_, 0);
+				_opacity_ = Math.min(_opacity_, 1);
+				//console.log(_opacity_);
+				$(".wc__headerBar .inner .barTit").css({opacity: _opacity_});
+				$(".wc__headerBar .inner, .wc__headerBar .inner a:active").css("background","rgba(237,237,237," + _opacity_ + ")");
+				$(".wc__headerBar .inner .back").css("filter","brightness(" + (1 - _opacity_) + ")");
+				$(".wc__headerBar .inner i").css("filter","invert(" + (1 - _opacity_) + ")");
+				
+
+ 
+			});
+		});
+
+		//计算日期与现在差距天数
+		function dayOut(date1){
+   			var date1=new Date(date1);
+   			var date2=new Date();
+   			var date=(date2.getTime()-date1.getTime())/(1000*60*60*24);
+   			return date;
+		}
+
+		//遍历修改时间标签
+		$(".wc__cmtlist li .wrap-cmt .reply__box .time").each(function () {
+
+			var time_text = $(this).text();
+
+			if(isNaN(time_text)&&!isNaN(Date.parse(time_text))){
+				//console.log(time_text);
+				$(this).text(String(Math.floor(dayOut(time_text))) + "天前");
+			}
+			
+		})
+	</script>
+	
+</body>
+</html>

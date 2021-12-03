@@ -1,0 +1,44 @@
+/* 微信模板配套css(列表)，作者森禅 */
+body{background: #ededed;}
+.splitline::after{display: none;}
+.splitlineL::after{display: none;}
+.wc__headerBar .inner, .wc__headerBar .inner a:active{background:#ededed;}
+.wc__headerBar .inner{border-bottom: 1px solid #e3e3e4;}
+.wc__headerBar .inner .barTit,.wc__headerBar .inner .barTxt{color:#171717;}
+.wc__headerBar .inner .back{background: url(../img/topbar/icon__back_1.png) no-repeat center; background-size:.4rem; width:1.02rem; position: relative;}
+.wc__headerBar .inner .u-one,.wc__headerBar .inner .u-qun{background: url(../img/topbar/icon__more_1.png) no-repeat center; background-size:.4rem;}
+.wc__headerBar .inner .sear{background: url(../img/topbar/icon__sear_1.png) no-repeat center; background-size:.4rem;}
+.wc__headerBar .inner .add{background: url(../img/topbar/icon__add_1.png) no-repeat center; background-size:.4rem;}
+::-webkit-scrollbar{display: none;}
+
+.wc__headerBar .inner .barTit{margin-left:0; position: fixed; right: 50%; transform: translateX(50%); text-align: center;}
+
+.wc__recordChat-list ul li .img img,.wc__addrFriend-list ul li .row .uimg{border-radius: 0.1rem;}
+
+.wc__ucinfo-detail ul li:first-child,.wc__ucinfo-personal ul li:first-child,.wc__explore-list ul li:first-child,.wc__ucenter-list ul li:first-child{margin-top: 0rem;}
+.wc__ucinfo-detail ul li .item.num1 {padding-bottom: .8rem;}
+.wc__ucinfo-detail ul li .item.num1 em{font-size: .4rem;}
+/* .wc__ucinfo-detail ul li .item.num1:after{content: ''; border-bottom: 1px solid #d9d9d9; color: #d9d9d9; height: 1px; width: auto; position: absolute; left: .3rem; right: .3rem; bottom: 0; transform: scaleY(0.5); -webkit-transform: scaleY(0.5);} */
+.wc__btns-panel{padding: 0 .0rem .0rem;}
+.wc__btn-primary,.wc__btn-primary:active{background-color: white; border-radius:0;padding:0 0rem;}
+.wc__btn-primary:after{border: 0px solid rgba(0,0,0,.2); border-radius: .0rem;}
+.wc__btns-panel a,.wc__ucinfo-detail ul li .item .lbl a{ color: rgb(0,43,128);}
+.wc__btn-default{visibility: hidden;}
+
+.wechat__tabBar ul li.on .ico.i1, .wechat__tabBar ul li.swiper-pagination-bullet-active .ico.i1{background: url(../img/tabbar/icon_chat_green.png) no-repeat center; background-size: .48rem;}
+.wechat__tabBar ul li.on .ico.i2, .wechat__tabBar ul li.swiper-pagination-bullet-active .ico.i2{background: url(../img/tabbar/icon_abook_green.png) no-repeat center; background-size: .48rem;}
+.wechat__tabBar ul li.on .ico.i3, .wechat__tabBar ul li.swiper-pagination-bullet-active .ico.i3{background: url(../img/tabbar/icon_explore_green.png) no-repeat center; background-size: .48rem;}
+.wechat__tabBar ul li.on .ico.i4, .wechat__tabBar ul li.swiper-pagination-bullet-active .ico.i4{background: url(../img/tabbar/icon_me_green.png) no-repeat center; background-size: .48rem;}
+.wechat__tabBar ul li.on span{color: #33cc49;}
+.wechat__tabBar ul li.swiper-pagination-bullet-active span{color: #33cc49;}
+
+.wc__cmtlist li .wrap-avt img{border-radius: 0.1rem;}
+.wc__friendZone .head .avator{background: transparent;}
+.wc__friendZone .head .avator img{border-radius: 0.2rem;}
+.wc__friendZone .head span{display: block; position:absolute;right:10px;bottom: -1rem;}
+.wc__friendZone .cont .inner{padding: 1rem 0 .1rem;}
+.wc__cmtlist li .wrap-cmt .u-name{font-weight:bold;}
+.wc__cmtlist li .wrap-cmt .arr{border-bottom:8px solid #f7f7f7;}
+.wc__cmtlist li .wrap-cmt .cmt-bd{background: #f7f7f7}
+.wc__cmtlist li .wrap-cmt .reply__box .btn-reply{background:url(../img/wchat/icon__wcZone-cmts_1.png) no-repeat center; background-size:.5rem; height:.5rem;width:.5rem;}
+.wc__cmtlist li .wrap-cmt .reply__box .time,.wc__friendZone .head span{color: #7f7f7f;}

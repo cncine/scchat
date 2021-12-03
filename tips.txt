@@ -1,0 +1,5 @@
+msg内
+<i class="not_sent"></i>被拉黑或未发送
+
+单字头像
+<a class="avatar" href="haoyouzhuye.html" style="background-color:white;"><span style="color: black;">张</span></a>
